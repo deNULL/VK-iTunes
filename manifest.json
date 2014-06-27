@@ -1,0 +1,21 @@
+{
+  "name": "VK iTunes Playlist Importer",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Импортирует музыку из медиатеки iTunes в ВКонтакте.",
+  "icons": { 
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "page_action": {
+    "default_icon": "icon32.png",               // TODO: scale it to 19 and 38 pixels
+    "default_title": "Импорт музыки из iTunes"  // optional; shown in tooltip
+  },
+  "permissions": [
+    "http://m.vk.com/audio",
+    "contextMenus",
+    "tabs"
+  ],
+  "background": { "scripts": ["background.js"] }
+}
